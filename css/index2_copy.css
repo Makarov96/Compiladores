@@ -1,0 +1,185 @@
+#storage {
+    position: absolute;
+    color: #ffffff;
+    top: 37%;
+    left: 30%;
+    height: 5%;
+    width: 13%;
+    background-color: black;
+    border-radius: 31px 31px 31px 31px;
+    -moz-border-radius: 31px 31px 31px 31px;
+    -webkit-border-radius: 31px 31px 31px 31px;
+    border: 0px solid #000000;
+}
+
+::placeholder {
+    color: gainsboro;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.box {
+    cursor: pointer;
+    width: 30%;
+    height: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    cursor: pointer;
+    width: 30%;
+    height: 50%;
+    color: rgb(88, 88, 88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+}
+
+.modal-box {
+    z-index: 1000;
+    cursor: auto;
+    width: 50%;
+    height: 84%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    display: none;
+    -webkit-box-shadow: 16px 13px 5px 0px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 16px 13px 5px 0px rgba(0, 0, 0, 0.43);
+    box-shadow: 16px 13px 5px 0px rgba(0, 0, 0, 0.43);
+}
+
+.modal-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content .close-button {
+    position: absolute;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    top: 0;
+    right: 0;
+}
+
+.box1 {
+    background-color: yellow;
+    position: absolute;
+    width: 12%;
+    height: 5%;
+    top: 37%;
+    left: 17%;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+}
+
+#network {
+    position: absolute;
+    top: 3.8%;
+    left: 54%;
+    float: left;
+    width: 600px;
+    height: 400px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    -webkit-box-shadow: 16px 13px 5px 0px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 16px 13px 5px 0px rgba(0, 0, 0, 0.43);
+    box-shadow: 16px 13px 5px 0px rgba(0, 0, 0, 0.43);
+}
+
+#config {
+    float: left;
+    width: 600px;
+    height: 600px;
+}
+
+#input_output {
+    height: 10%;
+    width: 15%;
+}
+
+p {
+    font-size: 16px;
+    max-width: 700px;
+}
+
+#destroy_button {
+    position: absolute;
+    color: #ffffff;
+    top: 37%;
+    left: 43.5%;
+    height: 5%;
+    width: 8%;
+    background-color: yellow;
+    border-radius: 31px 31px 31px 31px;
+    -moz-border-radius: 31px 31px 31px 31px;
+    -webkit-border-radius: 31px 31px 31px 31px;
+    border: 0px solid #000000;
+}
+
+#variables {
+    position: absolute;
+    color: #ffffff;
+    top: 5%;
+    left: 76%;
+    height: 5%;
+    width: 8%;
+}
+
+#var {
+    position: absolute;
+    color: #ffffff;
+    top: 15%;
+    left: 86%;
+    height: 5%;
+    width: 8%;
+}
+
+#info {
+    position: absolute;
+    color: #ffffff;
+    top: 15%;
+    left: 78%;
+    height: 5%;
+    width: 8%;
+}
+
+#info2 {
+    position: absolute;
+    color: #ffffff;
+    top: 8%;
+    left: 84%;
+    height: 5%;
+    width: 8%;
+}

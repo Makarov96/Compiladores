@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Compilador</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FunCo</title>
+    <script src="js/vis.js"></script>
+    <script src="js/exampleUtil.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/vis-network.min.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="box">
+            <textarea name="comentarios" id="ta" class="caja" placeholder="Escribe tus lineas de codigo"></textarea>
+        </div>
+
+        <div class="box2" id="clean">
+            <textview id="caj" style="color:white;" onclick="destroyNetwork() "></textview>
+        </div>
+
+        <input type="button" value="Compilar" id="button" onclick="main()">
+        <input type="button" value="Compila" id="">
+
+        <button id="storage" onclick="get()"> BNF </button>
+        <input type="button" id="destroy_button" onclick="destroyNetwork()" value="destroy"></input>
+
+
+        <div class="box box1 js-view-modal">EV</div>
+        <div class="modal-background" id="js-modal-background"></div>
+        <div class="box modal-box" id="js-modal">
+            <div class="modal-content">
+                <button type="button" class="close-button" id="js-close-modal">close</button>
+
+
+                <button id="verde" onclick="return mostrarOcultar('verde2')" type="button"></button>
+                <div id="verde2">
+                    <h2 id="print"> print("imprime");</h2>
+                </div>
+
+                <button id="morado" onclick="return mostrarOcultar('morado2')" type="button"></button>
+                <div id="morado2">
+                    <h2 id="print"> morado (carmin valor = 0; valor
+                        < n; valor++){</h2>
+                            <h6 id="print"> <br /> <br /> <br /> <br /> <br /> } </h6>
+                </div>
+
+                <button id="azul" onclick="return mostrarOcultar('azul2')" type="button"></button>
+                <div id="azul2">
+                    <h2 id="print"> azul (evaluation){</h2>
+
+                    <h2 id="print"> <br /> <br /> <br /> <br /> <br /> } </h2>
+                </div>
+
+                <button id="cafe" onclick="return mostrarOcultar('cafe2')" type="button"></button>
+                <div id="cafe2">
+                    <h2 id="print"> cafe {</h2>
+
+                    <h2 id="print"> <br /> <br /> <br /> <br /> <br /> } </h2>
+                </div>
+
+                <button id="coral" onclick="return mostrarOcultar('coral2')" type="button"></button>
+                <div id="coral2">
+                    <h2 id="print"> coral(evaluation) {</h2>
+
+                    <h2 id="print"> <br /> <br /> <br /> <br /> <br /> } </h2>
+                </div>
+
+                <button id="mostaza" onclick="return mostrarOcultar('mostaza2')" type="button"></button>
+                <div id="mostaza2">
+                    <h2 id="print"> mostaza(evaluation) {</h2>
+
+                    <h2 id="print"> <br /> <br /> <br /> <br /> <br /> } </h2>
+                </div>
+
+                <button id="negro" onclick="return mostrarOcultar('negro2')" type="button"></button>
+                <div id="negro2">
+                    <h2 id="print"> negro{</h2>
+
+                    <h2 id="print"> <br /> <br /> <br /> <br /> <br /> }mostaza() </h2>
+                </div>
+
+                <button id="blanco" onclick="return mostrarOcultar('blanco2')" type="button"></button>
+                <div id="blanco2">
+                    <h2 id="print"> pii = 3.1416</h2>
+
+
+                </div>
+
+                <button id="escarlata" onclick="return mostrarOcultar('escarlata2')" type="button"></button>
+                <div id="escarlata2">
+                    <h2 id="print"> escarlata --- variable de caracteres</h2>
+                </div>
+
+                <button id="carmin" onclick="return mostrarOcultar('carmin2')" type="button"></button>
+                <div id="carmin2">
+                    <h2 id="print"> carmin --- variable entera</h2>
+                </div>
+
+                <button id="jade" onclick="return mostrarOcultar('jade2')" type="button"></button>
+                <div id="jade2">
+                    <h2 id="print"> jade --- variable booleana</h2>
+                </div>
+
+                <button id="magenta" onclick="return mostrarOcultar('magenta2')" type="button"></button>
+                <div id="magenta2">
+                    <h2 id="print"> magenta --- variable flotante</h2>
+                </div>
+
+                <button id="fucsia" onclick="return mostrarOcultar('fucsia2')" type="button"></button>
+                <div id="fucsia2">
+                    <h2 id="print"> fucsia --- variable long</h2>
+                </div>
+
+                <button id="rosa" onclick="return mostrarOcultar('rosa2')" type="button"> </button>
+                <div id="rosa2">
+                    <h2 id="print"> rosa --- variable string</h2>
+                </div>
+                <button id="cian" onclick="return mostrarOcultar('cian2')" type="button"></button>
+                <div id="cian2">
+                    <h2 id="print"> switch(values){ <br /> <br /> cian: <br /> <br /> } </h2>
+                </div>
+                <button id="turquesa" onclick="return mostrarOcultar('turquesa2')" type="button"></button>
+                <div id="turquesa2">
+                    <h2 id="print"> switch(values){ <br /> <br /> cian: <br /> <br />turquesa; <br /> <br /> } </h2>
+                </div>
+                <button id="ambar" onclick="return mostrarOcultar('ambar2')" type="button"></button>
+                <div id="ambar2">
+                    <h2 id="print"> ambar --- variable short</h2>
+                </div>
+
+                <button id="violeta" onclick="return mostrarOcultar('violeta2')" type="button"></button>
+                <div id="violeta2">
+                    <h2 id="print"> violeta --- variable byte</h2>
+                </div>
+                <button id="purpura" onclick="return mostrarOcultar('purpura2')" type="button"></button>
+                <div id="purpura2">
+                    <h2 id="print"> purpura --- variable import</h2>
+                </div>
+                <button id="lila" onclick="return mostrarOcultar('lila2')" type="button"></button>
+                <div id="lila2">
+                    <h2 id="print"> lila {</h2>
+
+                    <h2 id="print"> <br /> <br /> <br /> <br /> <br /> } </h2>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <h3 id="variables">Variables Declaradas</h3>
+
+    <h3 id="var"></h3>
+    <h3 id="info"></h3>
+    <h3 id="info2">Informacion</h3>
+    <div id="network"></div>
+
+
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/viewadmon.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+
+</body>
+
+</html>
